@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.fancy-heading .animate-gradient {
+          background-size: 200% 200%;
+          animation: gradientMove 3s linear infinite;
+        }
+        @keyframes gradientMove {
+          0% { background-position: 0% 50%; }
+          100% { background-position: 100% 50%; }
+        }
+
+        /* Floating Icons Animation */
+.floating-icon {
+    position: absolute;
+    animation: float 10s infinite ease-in-out;
+    animation-delay: var(--delay);
+    top: var(--y);
+    left: var(--x);
+    opacity: 0.7;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-20px);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+}
+
+/* Ensure icons don't interfere with content */
+.floating-icon i {
+    pointer-events: none;
+}
