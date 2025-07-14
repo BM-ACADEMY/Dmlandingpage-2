@@ -14,7 +14,7 @@
 
 <body>
 
-    <section class="bg-gray-900">
+    <section class="bg-gray-900" id="home">
         <main
             class="flex flex-col bg-[url('./background.png')] bg-cover bg-center bg-no-repeat text-white min-h-screen max-md:px-4">
 
@@ -48,10 +48,10 @@
                 <!-- Nav Menu -->
                 <div id="menu"
                     class="max-md:absolute max-md:bg-black/50 max-md:h-screen max-md:w-0 max-md:overflow-hidden max-md:transition-[width] max-md:duration-300 max-md:top-0 max-md:left-0 max-md:flex-col max-md:justify-center max-md:text-lg max-md:backdrop-blur flex items-center gap-8 font-medium">
-                    <a href="#">Home</a>
-                    <a href="#">Team</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Docs</a>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#scholarship">Scholarships</a>
+                    <a href="#testimonials">Testimonials </a>
                     <button aria-label="close menu" class="size-6 md:hidden" id="close-menu">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -175,7 +175,7 @@
 
     <!-- Section 3: SAT Scholarship -->
     <section class="bg-gradient-to-br from-white via-[#fef6f5] to-[#faeae6] py-20 px-6 md:px-16 lg:px-24 xl:px-32"
-        id="scholarships">
+        id="scholarship">
         <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
             <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
                 Unlock Scholarships with SAT – <span class="text-[#cb2800]">The BM Academy Advantage</span>
@@ -341,7 +341,7 @@
 
 
       <!-- Section 6: Testimonials -->
-    <section id="testimonials" class="bg-gray-50 py-20">
+    <section id="testimonials" class="bg-gray-50 py-20" >
         <div class="text-center mb-10">
             <h2 class="text-4xl font-extrabold text-gray-900 mb-2">
                 <i class="fas fa-comment-dots text-blue-600 mr-2"></i> Student Testimonials & Results
@@ -417,12 +417,13 @@
 
 
      <!-- Footer -->
-    <footer class="px-6 md:px-16 lg:px-24 xl:px-32 bg-blue-50" id="contact">
+   <footer class="px-6 md:px-16 lg:px-24 xl:px-32 bg-blue-50" id="contact">
         <div
             class="flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-gray-500/30 text-gray-500">
             <div class="flex-1 min-w-[250px]">
-                <a class="site_link" href="#home">
-                    <img src="bm.png" alt="BM Academy" style="height: 55px; width: auto;">
+                <a class="site_link" href="#">
+                    <img src="bm.png" alt="Collab - Online Learning Platform"
+                        style="height: 55px; width: auto;">
                 </a>
                 <p class="max-w-sm mt-6">
                     BM Academy offers hands-on training in courses like Digital Marketing, Web Development, and Cloud
@@ -435,8 +436,8 @@
                     <h3 class="font-semibold text-base text-gray-900 mb-3 md:mb-5">Quick Links</h3>
                     <ul class="text-sm space-y-1">
                         <li><a href="#home" class="hover:underline transition">Home</a></li>
-                        <li><a href="#program" class="hover:underline transition">Program</a></li>
-                        <li><a href="#scholarships" class="hover:underline transition">Scholarship</a></li>
+                        <li><a href="#about" class="hover:underline transition">About</a></li>
+                        <li><a href="#scholarship" class="hover:underline transition">Scholarship</a></li>
                         <li><a href="#testimonials" class="hover:underline transition">Testimonials</a></li>
                     </ul>
                 </div>
@@ -465,12 +466,7 @@
             © <span id="year"></span> <a href="https://thebmacademy.com/" target="_blank"
                 class="hover:underline text-blue-600">BM Academy</a>. All Rights Reserved.
         </p>
-        <script>
-            document.getElementById("year").textContent = new Date().getFullYear();
-        </script>
     </footer>
-
-
 
     
 
